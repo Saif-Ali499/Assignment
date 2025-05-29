@@ -3,7 +3,7 @@ import debounce from 'lodash.debounce';
 import { dummyData } from '../Data';
 import { LRUCache } from '../utils/LRUCache';
 
-const cache = new LRUCache(10); // LRU cache with max 10 entries
+const cache = new LRUCache(10);
 
 const highlightMatch = (text, query) => {
   const regex = new RegExp(`(${query})`, 'gi');
@@ -41,7 +41,7 @@ const AutoComplete = () => {
       .filter((item) =>
         item.name.toLowerCase().includes(input.toLowerCase())
       )
-      .slice(0, 10); // show only top 10 results
+      .slice(0, 10);
 
     cache.set(input, filtered);
     setResults(filtered);

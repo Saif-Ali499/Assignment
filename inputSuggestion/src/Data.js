@@ -58,5 +58,5 @@ export const dummyData = [
   { id: 57, name: "Tailwind CSS Best Practices" },
   { id: 58, name: "Tailwind CSS vs Bootstrap" },
   { id: 59, name: "Tailwind CSS Performance Optimization" },
-  { id: 60, name: "Tailwind CSS Interview Questions" }
+  { id: 60, name: "Tailwind CSS Interview Questions" },
 ];
